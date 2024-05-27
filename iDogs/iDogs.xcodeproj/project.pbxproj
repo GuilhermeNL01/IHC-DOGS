@@ -11,6 +11,10 @@
 		4019DE192C01085F00591CBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4019DE182C01085F00591CBF /* ContentView.swift */; };
 		4019DE1B2C01086000591CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4019DE1A2C01086000591CBF /* Assets.xcassets */; };
 		4019DE1E2C01086000591CBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4019DE1D2C01086000591CBF /* Preview Assets.xcassets */; };
+		40714EF02C04A84100CC281C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40714EEF2C04A84100CC281C /* OnboardingView.swift */; };
+		40714EF42C04A8D100CC281C /* OnboardingSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40714EF32C04A8D100CC281C /* OnboardingSteps.swift */; };
+		40714EF62C04B54100CC281C /* DogBreed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40714EF52C04B54100CC281C /* DogBreed.swift */; };
+		40714EF82C04B55A00CC281C /* DogBreedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40714EF72C04B55A00CC281C /* DogBreedRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		4019DE182C01085F00591CBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4019DE1A2C01086000591CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4019DE1D2C01086000591CBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40714EEF2C04A84100CC281C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		40714EF32C04A8D100CC281C /* OnboardingSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSteps.swift; sourceTree = "<group>"; };
+		40714EF52C04B54100CC281C /* DogBreed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreed.swift; sourceTree = "<group>"; };
+		40714EF72C04B55A00CC281C /* DogBreedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogBreedRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				4019DE182C01085F00591CBF /* ContentView.swift */,
+				40714EEF2C04A84100CC281C /* OnboardingView.swift */,
+				40714EF72C04B55A00CC281C /* DogBreedRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,6 +98,8 @@
 		4019DE262C01089900591CBF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				40714EF32C04A8D100CC281C /* OnboardingSteps.swift */,
+				40714EF52C04B54100CC281C /* DogBreed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40714EF02C04A84100CC281C /* OnboardingView.swift in Sources */,
 				4019DE192C01085F00591CBF /* ContentView.swift in Sources */,
+				40714EF62C04B54100CC281C /* DogBreed.swift in Sources */,
+				40714EF42C04A8D100CC281C /* OnboardingSteps.swift in Sources */,
+				40714EF82C04B55A00CC281C /* DogBreedRow.swift in Sources */,
 				4019DE172C01085F00591CBF /* iDogsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

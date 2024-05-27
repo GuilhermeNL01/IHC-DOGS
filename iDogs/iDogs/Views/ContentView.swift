@@ -8,16 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showOnboarding = false
+    
+    let dogBreeds = [
+        DogBreed(name: "Raça 1", image: "placeholder"),
+        DogBreed(name: "Raça 2", image: "placeholder"),
+        DogBreed(name: "Raça 3", image: "placeholder")
+    ]
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                // Barra de Pesquisa
+                HStack {
+                    TextField("Search...", text: .constant(""))
+                        .padding(10)
+                        .background(Color(.systemGray5))
+                        .cornerRadius(8)
+                    
+                    Button(action: {
+                        // Botão de Filtro
+                    }) {
+                        Image(systemName: "line.horizontal.3.decrease.circle")
+                            .font(.title)
+                            .foregroundColor(.gray)
+                    }
+                }
+                .padding()
+
+                // Lista de raças
+                ScrollView {
+                    ForEach(dogBreeds) { breed in
+                        DogBreedRow(breed: breed)
+                            .padding(.horizontal)
+                            .padding(.vertical, 5)
+                    }
+                }
+            }
+            .navigationTitle("Dog Breeds")
+            .navigationBarTitleDisplayMode(.large)
+            .navigationBarBackButtonHidden()
+            }
         }
-        .padding()
     }
-}
+
+
 
 #Preview {
     ContentView()
